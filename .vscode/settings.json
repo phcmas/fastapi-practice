@@ -8,17 +8,24 @@
             "database": "${workspaceFolder:fastapi-practice}/fastapi-practice.db"
         }
     ],
+    "python.defaultInterpreterPath": "/home/seungkyun/anaconda3/envs/fastapi-practice/bin/python",
     "python.analysis.autoImportCompletions": true,
-    "python.defaultInterpreterPath": "/home/seungkyun/study/fastapi-practice/fastapi-env/bin/python",
+    "python.analysis.indexing": true,
+    "python.analysis.autoSearchPaths": true,
     "python.analysis.extraPaths": [
-        "${workspaceFolder}/fastapi-env",
-        "${workspaceFolder}/fastapi-env/lib64/python3.8/site-packages",
-        "/home/seungkyun/study/fastapi-practice/fastapi-env/lib64/python3.8/site-packages/sqlalchemy"
+        "/home/seungkyun/anaconda3/envs/fastapi-practice/lib/python3.8/site-packages",
+    ],
+    "python.autoComplete.extraPaths": [
+        "/home/seungkyun/anaconda3/envs/fastapi-practice/lib/python3.8/site-packages",
     ],
     "python.analysis.packageIndexDepths": [
         {
-            "name": "sqlalchemy",
+            "name": "fastapi",
             "depth": 2
         },
+        {
+            "name": "sqlalchemy",
+            "depth": 2
+        }
     ]
 }

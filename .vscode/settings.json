@@ -1,0 +1,24 @@
+{
+    "sqltools.useNodeRuntime": true,
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "fastapi-practice",
+            "database": "${workspaceFolder:fastapi-practice}/fastapi-practice.db"
+        }
+    ],
+    "python.analysis.autoImportCompletions": true,
+    "python.defaultInterpreterPath": "/home/seungkyun/study/fastapi-practice/fastapi-env/bin/python",
+    "python.analysis.extraPaths": [
+        "${workspaceFolder}/fastapi-env",
+        "${workspaceFolder}/fastapi-env/lib64/python3.8/site-packages",
+        "/home/seungkyun/study/fastapi-practice/fastapi-env/lib64/python3.8/site-packages/sqlalchemy"
+    ],
+    "python.analysis.packageIndexDepths": [
+        {
+            "name": "sqlalchemy",
+            "depth": 2
+        },
+    ]
+}
